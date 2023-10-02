@@ -1,10 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage/LandingPage';
 import './App.css'
 
 function App() {
   
   return (
     <>
-      <h1>Vite + React</h1>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+      </Routes>
     </>
   )
 }
