@@ -1,8 +1,11 @@
+import Header from "../../components/Header/Header";
 import "./LandingPage.Styles.css";
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <>
+      <Header />
+    </>
   )
 }
 
