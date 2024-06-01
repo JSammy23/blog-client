@@ -1,7 +1,7 @@
-// src/components/Header.jsx
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, IconButton, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import { styled } from '@mui/system';
 
 const HeaderContainer = styled(AppBar)(({ theme }) => ({
@@ -16,11 +16,13 @@ const Header = ({ toggleTheme }) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          My Blog
+          Wandering Wisdom
         </Typography>
-        <Button color="inherit" onClick={toggleTheme}>
-          Toggle Theme
-        </Button>
+        <Tooltip  title="Toggle Theme" >
+          <IconButton color="inherit" onClick={toggleTheme} >
+            <DarkModeOutlinedIcon />
+          </IconButton>
+        </Tooltip>
       </Toolbar>
     </HeaderContainer>
   );
