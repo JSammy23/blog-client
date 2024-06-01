@@ -6,6 +6,7 @@ import { styled } from '@mui/system';
 
 const HeaderContainer = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
+  marginBottom: theme.spacing(4),
 }));
 
 const Header = ({ toggleTheme }) => {
