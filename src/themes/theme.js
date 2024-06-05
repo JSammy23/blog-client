@@ -8,6 +8,7 @@ const colors = {
   greenDark: '#709775',
   greenDarker: '#415D43',
   greenDarkest: '#111D13',
+  blueAccent: '#38a3a5',
 };
 
 // Light theme
@@ -15,18 +16,18 @@ const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: colors.green,
+      main: colors.greenDark,
     },
     secondary: {
-      main: colors.greenDark,
+      main: colors.greenDarker,
     },
     background: {
       default: '#ffffff',
       paper: '#f5f5f5',
     },
     text: {
-      primary: '#111D13',
-      secondary: '#415D43',
+      primary: '#000000',
+      secondary: colors.greenDarker,
     },
   },
   typography: {
@@ -42,10 +43,10 @@ const darkTheme = createTheme({
       main: colors.greenLight,
     },
     secondary: {
-      main: colors.greenDark,
+      main: colors.greenDarker,
     },
     background: {
-      default: '#111D13',
+      default: '#000000',
       paper: '#1c1c1c',
     },
     text: {
