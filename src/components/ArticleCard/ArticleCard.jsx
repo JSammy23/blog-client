@@ -20,7 +20,7 @@ const AuthorLink = styled(Typography)(({ theme }) => ({
   textDecoration: 'none',
   color: theme.palette.text.primary,
   '&:hover': {
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     cursor: 'pointer',
   },
 }));
@@ -51,7 +51,7 @@ const ArticleCard = ({ article, lite }) => {
       />
       {!lite && (
         <CardContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body3" color="textSecondary">
             {article.description}
           </Typography>
         </CardContent>
